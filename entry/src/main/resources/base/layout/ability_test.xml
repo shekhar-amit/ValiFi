@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<DirectionalLayout
+    xmlns:ohos="http://schemas.huawei.com/res/ohos"
+    ohos:height="match_parent"
+    ohos:width="match_parent"
+    ohos:orientation="vertical"
+    ohos:padding="15fp">
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="Date"
+        ohos:text_size="15fp"/>
+
+    <TextField
+        ohos:id="$+id:tf_date"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:hint="Date (DD-MM-YYYY)"
+        ohos:text_size="20fp"/>
+
+    <Text
+        ohos:id="$+id:err_date"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="15fp"
+        ohos:text_color="$ohos:color:id_color_badge_red"
+        ohos:visibility="hide"
+        />
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="Value greater than 13"
+        ohos:text_size="15fp"/>
+
+    <TextField
+        ohos:id="$+id:tf_minvalue"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:hint="Greater than 13"
+        ohos:text_input_type="pattern_number"
+        ohos:text_size="20fp"/>
+
+    <Text
+        ohos:id="$+id:err_mivalue"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="15fp"
+        ohos:text_color="$ohos:color:id_color_badge_red"
+        ohos:visibility="hide"
+        />
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="Username"
+        ohos:text_size="15fp"/>
+
+    <TextField
+        ohos:id="$+id:tf_user"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:hint="Username"
+        ohos:text_size="20fp"/>
+
+    <Text
+        ohos:id="$+id:err_user"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="15fp"
+        ohos:text_color="$ohos:color:id_color_badge_red"
+        ohos:visibility="hide"
+        />
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="Character length between 2 and 4"
+        ohos:text_size="15fp"/>
+
+    <TextField
+        ohos:id="$+id:tf_rangelen"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:hint="Range length 2-4"
+        ohos:text_size="20fp"/>
+
+    <Text
+        ohos:id="$+id:err_rangelen"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="15fp"
+        ohos:text_color="$ohos:color:id_color_badge_red"
+        ohos:visibility="hide"
+        />
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="Character length exactly 3"
+        ohos:text_size="15fp"/>
+
+    <TextField
+        ohos:id="$+id:tf_exactlen"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:hint="Exact length 3"
+        ohos:text_size="20fp"/>
+
+    <Text
+        ohos:id="$+id:err_exactlen"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="15fp"
+        ohos:text_color="$ohos:color:id_color_badge_red"
+        ohos:visibility="hide"
+        />
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="Character length minimum 3"
+        ohos:text_size="15fp"/>
+
+    <TextField
+        ohos:id="$+id:tf_minlen"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:hint="Min length 3"
+        ohos:text_size="20fp"/>
+
+    <Text
+        ohos:id="$+id:err_minlen"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="15fp"
+        ohos:text_color="$ohos:color:id_color_badge_red"
+        ohos:visibility="hide"
+        />
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="Character length minimum 5"
+        ohos:text_size="15fp"/>
+
+    <TextField
+        ohos:id="$+id:tf_pattern"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:hint="Min length 5"
+        ohos:text_size="20fp"/>
+
+    <Text
+        ohos:id="$+id:err_pattern"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="15fp"
+        ohos:text_color="$ohos:color:id_color_badge_red"
+        ohos:visibility="hide"
+        />
+
+    <Text
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="Credit Card Number"
+        ohos:text_size="15fp"/>
+
+    <TextField
+        ohos:id="$+id:tf_card"
+        ohos:width="match_parent"
+        ohos:height="match_content"
+        ohos:hint="Credit Card Number"
+        ohos:text_input_type="pattern_number"
+        ohos:text_size="20fp"/>
+
+    <Text
+        ohos:id="$+id:err_card"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text_size="15fp"
+        ohos:text_color="$ohos:color:id_color_badge_red"
+        ohos:visibility="hide"
+        />
+
+    <Button
+        ohos:id="$+id:btn_submit2"
+        ohos:height="match_content"
+        ohos:width="match_content"
+        ohos:text="Submit"
+        ohos:text_size="25fp"/>
+
+</DirectionalLayout>

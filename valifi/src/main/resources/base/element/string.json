@@ -1,0 +1,56 @@
+{
+  "string": [
+    {
+      "name": "app_name",
+      "value": "ValiFi"
+    },
+    {
+      "name": "validation_error_username",
+      "value": "Username must be at least 4 characters long"
+    },
+    {
+      "name": "validation_error_email",
+      "value": "Enter valid email"
+    },
+    {
+      "name": "validation_error_phone",
+      "value": "Enter valid phone number"
+    },
+    {
+      "name": "validation_error_fullname",
+      "value": "Fullname must have at least %d characters"
+    },
+    {
+      "name": "validation_error_password",
+      "value": "Password must be at least 8 characters long"
+    },
+    {
+      "name": "validation_error_empty",
+      "value": "Field must not be empty"
+    },
+    {
+      "name": "validation_error_min_length",
+      "value": "Field must be at least %d characters long"
+    },
+    {
+      "name": "validation_error_max_length",
+      "value": "Field must be at most %d characters long"
+    },
+    {
+      "name": "validation_error_range_length",
+      "value": "Field must be between %1$d and %2$d characters long"
+    },
+    {
+      "name": "validation_error_exact_length",
+      "value": "Field must be exactly %d characters long"
+    },
+    {
+      "name": "validation_error_older_than_years",
+      "value": "Must be at least %d years long"
+    },
+    {
+      "name": "validation_error_credit_card",
+      "value": "Enter valid credit card number"
+    }
+  ]
+}
