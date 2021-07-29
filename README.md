@@ -2,11 +2,11 @@
 # ValiFi
 
 * __ValiFi__ is an ohos library for validating fields or whole forms. 
-* It's working similar to __data binding__ and validations are visible immediately when user adds input. 
+* The validations are visible immediately when the user adds input. 
 * It's highly customizable and simple to use.
 
 # Source
-The library was ported for HarmonyOS from the Android Library: [ValiFi](https://github.com/mlykotom/valifi/) (version 1.5.0)
+The library was inspired from the Android Library: [ValiFi](https://github.com/mlykotom/valifi/) (version 1.5.0)
 
 ## Features
 The library supports rapid and customizable form validation such that the validations are visible immediately as the user adds input. It supports validation for Numeric, Phone Number, Email, Regex, Date, Credit Card, and Minimum/Maximum/Range character length. The validators can also be customized as required.
@@ -208,6 +208,10 @@ And if input is not parseable then it will set as invalid without the need of sp
 ## Sample
 
 A sample app with some use cases of the library is available on this [link](entry/) .
+
+## Future work
+
+Future work would include implementing similar live validation functionality via data binding.
 
 # License
     Copyright 2018 Tomas Mlynaric
