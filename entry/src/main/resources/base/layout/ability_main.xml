@@ -7,109 +7,28 @@
     ohos:orientation="vertical"
     ohos:padding="10fp">
 
-    <Text
+    <Button
+        ohos:id="$+id:btn_basic_form"
         ohos:height="match_content"
         ohos:width="match_content"
-        ohos:text="Email"
-        ohos:text_size="15fp"/>
+        ohos:top_margin="10vp"
+        ohos:bottom_margin="10vp"
 
-    <TextField
-        ohos:id="$+id:tf_email"
-        ohos:width="match_parent"
-        ohos:height="match_content"
-        ohos:hint="E-mail address"
-        ohos:text_size="25fp"/>
-
-    <Text
-        ohos:id="$+id:err_email"
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:text_size="15fp"
-        ohos:text_color="$ohos:color:id_color_badge_red"
-        ohos:visibility="hide"
-        />
-
-    <Text
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:text="Password"
-        ohos:text_size="15fp"/>
-
-    <TextField
-        ohos:id="$+id:tf_password"
-        ohos:width="match_parent"
-        ohos:height="match_content"
-        ohos:hint="Password"
-        ohos:text_input_type="pattern_password"
-        ohos:text_size="25fp"/>
-
-    <Text
-        ohos:id="$+id:err_password"
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:text_size="15fp"
-        ohos:text_color="$ohos:color:id_color_badge_red"
-        ohos:visibility="hide"
-        />
-
-    <Text
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:text="Confirm Password"
-        ohos:text_size="15fp"/>
-
-    <TextField
-        ohos:id="$+id:tf_password2"
-        ohos:width="match_parent"
-        ohos:height="match_content"
-        ohos:hint="Verify Password"
-        ohos:text_input_type="pattern_password"
-        ohos:text_size="25fp"/>
-
-    <Text
-        ohos:id="$+id:err_password2"
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:text_size="15fp"
-        ohos:text_color="$ohos:color:id_color_badge_red"
-        ohos:visibility="hide"
-        />
-
-    <Text
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:text="Phone Number"
-        ohos:text_size="15fp"/>
-
-    <TextField
-        ohos:id="$+id:tf_phone"
-        ohos:width="match_parent"
-        ohos:height="match_content"
-        ohos:hint="Phone (not mandatory)"
-        ohos:text_input_type="pattern_number"
-        ohos:text_size="25fp"/>
-
-    <Text
-        ohos:id="$+id:err_phone"
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:text_size="15fp"
-        ohos:text_color="$ohos:color:id_color_badge_red"
-        ohos:visibility="hide"
-        />
+        ohos:padding="10vp"
+        ohos:background_element="#D7D7D7"
+        ohos:text="Basic Form"
+        ohos:text_size="20fp"/>
 
     <Button
-        ohos:id="$+id:btn_submit"
+        ohos:id="$+id:btn_long_form"
         ohos:height="match_content"
         ohos:width="match_content"
-        ohos:text="Submit"
-        ohos:text_size="25fp"/>
+        ohos:top_margin="10vp"
+        ohos:bottom_margin="10vp"
 
-    <Button
-        ohos:id="$+id:btn_test"
-        ohos:height="match_content"
-        ohos:width="match_content"
-        ohos:text="Test Form"
-        ohos:text_size="25fp"/>
+        ohos:padding="10vp"
+        ohos:background_element="#D7D7D7"
+        ohos:text="Long Form"
+        ohos:text_size="20fp"/>
 
 </DirectionalLayout>

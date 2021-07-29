@@ -2,8 +2,12 @@ package com.mlykotom.valifi.fields;
 
 import com.mlykotom.valifi.ValiFi;
 import com.mlykotom.valifi.ValiFieldBase;
+import java.io.PrintWriter;
+import java.io.StringWriter;
 import java.text.DateFormat;
 import java.util.Calendar;
+import ohos.hiviewdfx.HiLog;
+import ohos.hiviewdfx.HiLogLabel;
 import org.jetbrains.annotations.NotNull;
 import org.jetbrains.annotations.Nullable;
 
@@ -11,6 +15,9 @@ import org.jetbrains.annotations.Nullable;
  * ValiFieldDate class for date validation.
  */
 public class ValiFieldDate extends ValiFieldBase<Calendar> {
+
+    static final HiLogLabel LABEL = new HiLogLabel(HiLog.LOG_APP, 0x00201, "MY_TAG");
+
     public ValiFieldDate() {
         super();
     }
@@ -50,7 +57,9 @@ public class ValiFieldDate extends ValiFieldBase<Calendar> {
         try {
             cal = new Calendar.Builder().setDate(yr, mo, day).build();
         } catch (Exception e) {
-            e.printStackTrace();
+            StringWriter errors = new StringWriter();
+            e.printStackTrace(new PrintWriter(errors));
+            HiLog.error(LABEL, e.toString());
         }
         return cal;
     }

@@ -43,6 +43,15 @@
         "label": "$string:app_name",
         "type": "page",
         "launchType": "standard"
+      },
+      {
+        "orientation": "unspecified",
+        "name": "com.mlykotom.sample.LongForm",
+        "icon": "$media:icon",
+        "description": "$string:longform_description",
+        "label": "$string:app_name",
+        "type": "page",
+        "launchType": "standard"
       }
     ]
   }

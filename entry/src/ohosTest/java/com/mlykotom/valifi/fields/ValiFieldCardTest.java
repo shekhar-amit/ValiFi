@@ -29,7 +29,7 @@ public class ValiFieldCardTest {
     }
 
     @Parameterized.Parameters
-    public static Collection creditCards() {
+    public static Collection<String> creditCards() {
         return Arrays.asList(
                 "4242424242424242",
                 "4012888888881881",

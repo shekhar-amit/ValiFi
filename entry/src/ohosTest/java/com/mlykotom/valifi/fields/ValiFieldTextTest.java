@@ -19,6 +19,9 @@ public class ValiFieldTextTest {
     private TextField mTextField;
     private Text mErrorText;
     private static final String VALIDATOR_EMPTY_MESSAGE = "field can't be empty";
+    private static final String TEST_STRING3 = "123";
+    private static final String TEST_STRING4 = "1234";
+    private static final String TEST_STRING5 = "12345";
 
     @Before
     public void prepare() {
@@ -62,14 +65,14 @@ public class ValiFieldTextTest {
 
     @Test
     public void checkMinLengthInvalid() {
-        mTextField.setText("123");
+        mTextField.setText(TEST_STRING3);
         mField.addMinLengthValidator("must be longer than 4 characters", 4);
         assertFalse(mField.isValid());
     }
 
     @Test
     public void checkMinLengthValid() {
-        mTextField.setText("1234");
+        mTextField.setText(TEST_STRING4);
         mField.addMinLengthValidator("must be longer than 4 characters", 4);
         assertTrue(mField.isValid());
     }
@@ -78,14 +81,14 @@ public class ValiFieldTextTest {
 
     @Test
     public void checkExactLength5Invalid() {
-        mTextField.setText("1234");
+        mTextField.setText(TEST_STRING4);
         mField.addExactLengthValidator("must be exactly 5 characters long", 5);
         assertFalse(mField.isValid());
     }
 
     @Test
     public void checkExactLength5Valid() {
-        mTextField.setText("12345");
+        mTextField.setText(TEST_STRING5);
         mField.addExactLengthValidator("must be exactly 5 characters long", 5);
         assertTrue(mField.isValid());
     }
@@ -94,14 +97,14 @@ public class ValiFieldTextTest {
 
     @Test
     public void checkMaxLengthInvalid() {
-        mTextField.setText("1234");
+        mTextField.setText(TEST_STRING4);
         mField.addMaxLengthValidator("must be shorter than 4 characters", 4);
         assertTrue(mField.isValid());
     }
 
     @Test
     public void checkMaxLengthValid() {
-        mTextField.setText("12345");
+        mTextField.setText(TEST_STRING5);
         mField.addMaxLengthValidator("must be shorter than 4 characters", 4);
         assertFalse(mField.isValid());
     }
@@ -118,7 +121,7 @@ public class ValiFieldTextTest {
 
     @Test
     public void checkRangeLengthMin4Max6Valid5() {
-        mTextField.setText("12345");
+        mTextField.setText(TEST_STRING5);
         mField.addRangeLengthValidator("must be between 4 and 6", 4, 6);
         assertTrue(mField.isValid());
     }

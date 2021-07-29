@@ -7,20 +7,17 @@ import com.mlykotom.valifi.fields.ValiFieldDate;
 import com.mlykotom.valifi.fields.ValiFieldText;
 import com.mlykotom.valifi.fields.ValiFieldUsername;
 import com.mlykotom.valifi.fields.number.ValiFieldLong;
-import com.mlykotom.valifi.fields.number.ValiFieldNumber;
-import java.util.regex.Pattern;
 import ohos.aafwk.ability.AbilitySlice;
 import ohos.aafwk.content.Intent;
 import ohos.agp.components.Button;
-import ohos.agp.components.Component;
 import ohos.agp.components.Text;
 import ohos.agp.components.TextField;
 import ohos.agp.window.dialog.ToastDialog;
 
-/**
- * Test Ability Slice of sample app.
- */
-public class TestAbilitySlice extends AbilitySlice {
+import java.util.regex.Pattern;
+
+public class LongFormSlice extends AbilitySlice {
+
 
     TextField tf_date;
     TextField tf_minvalue;
@@ -49,12 +46,12 @@ public class TestAbilitySlice extends AbilitySlice {
     public final ValiFieldText vf_pattern = new ValiFieldText();
     public final ValiFieldCard vf_card = new ValiFieldCard();
     public final ValiFiForm form = new ValiFiForm(vf_date, vf_minvalue, vf_username, vf_card,
-                                            vf_rangelen, vf_exactlen, vf_minlen, vf_pattern);
+            vf_rangelen, vf_exactlen, vf_minlen, vf_pattern);
 
     @Override
     public void onStart(Intent intent) {
         super.onStart(intent);
-        super.setUIContent(ResourceTable.Layout_ability_test);
+        super.setUIContent(ResourceTable.Layout_ability_long_form);
 
         tf_date = (TextField) findComponentById(ResourceTable.Id_tf_date);
         tf_minvalue = (TextField) findComponentById(ResourceTable.Id_tf_minvalue);
@@ -131,5 +128,4 @@ public class TestAbilitySlice extends AbilitySlice {
     public void onForeground(Intent intent) {
         super.onForeground(intent);
     }
-
 }
