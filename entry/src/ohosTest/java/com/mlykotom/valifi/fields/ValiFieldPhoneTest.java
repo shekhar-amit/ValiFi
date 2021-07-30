@@ -34,13 +34,13 @@ public class ValiFieldPhoneTest {
     }
 
     @Test
-    public void checkConstructWithValidEmail() {
+    public void checkConstructWithValidPhone() {
         mTextField.setText(PHONE_NUMBER_VALID);
         assertTrue(mField.isValid());
     }
 
     @Test
-    public void checkConstructWithInvalidEmail() {
+    public void checkConstructWithInvalidPhone() {
         mTextField.setText(PHONE_NUMBER_INVALID);
         assertFalse(mField.isValid());
         assertEquals(FIELD_ERROR_MSG, mErrorText.getText());

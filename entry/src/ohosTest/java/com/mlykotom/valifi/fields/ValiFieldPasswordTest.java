@@ -33,13 +33,13 @@ public class ValiFieldPasswordTest {
     }
 
     @Test
-    public void checkConstructWithValidEmail() {
+    public void checkConstructWithValidPassword() {
         mTextField.setText(PASSWORD_VALID);
         assertTrue(mField.isValid());
     }
 
     @Test
-    public void checkConstructWithInvalidEmail() {
+    public void checkConstructWithInvalidPassword() {
         mTextField.setText(PASSWORD_INVALID);
         assertFalse(mField.isValid());
         assertEquals(FIELD_ERROR_MSG, mErrorText.getText());
